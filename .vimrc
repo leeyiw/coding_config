@@ -9,6 +9,8 @@ hi PmenuSel ctermbg=red
 hi Folded ctermfg=241 ctermbg=NONE
 "设置搜索高亮的颜色
 hi Search ctermfg=0
+"当前行背景色高亮
+hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 "设置编码为utf8
 set encoding=utf8
@@ -52,8 +54,6 @@ set incsearch
 "set ignorecase
 "设置当前行高亮
 set cursorline
-"当前行背景色高亮
-hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 "自动补全{}
 inoremap { {}<LEFT>
@@ -86,7 +86,7 @@ nmap K k
 "用SHIFT-L替换向右切换分屏
 nmap L l
 
-"用SHIFT+Z替换切换折叠状态za"
+"用SHIFT+Z替换切换折叠状态za
 nmap Z za
 
 "自动保存视图
@@ -132,4 +132,8 @@ function PythonSetting()
 	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=grey
 	IndentGuidesEnable
 endfunction
+"}
+
+"for Omni{
+filetype plugin on
 "}
