@@ -136,4 +136,5 @@ endfunction
 
 "for Omni{
 filetype plugin on
+set completeopt=menu
 "}
