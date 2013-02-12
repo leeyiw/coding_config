@@ -123,7 +123,7 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 "for python{
 autocmd FileType python call PythonSetting()
 function PythonSetting()
-	setlocal expandtab shiftwidth=4 tabstop=4
+	setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 	let g:indent_guides_auto_colors = 0
 	let g:indent_guides_guide_size = 1
 	let g:indent_guides_start_level = 2
