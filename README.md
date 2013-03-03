@@ -1,4 +1,4 @@
-vim
-===
+coding-config
+=============
 
-my vim configuration
+my coding tools configuration, including vim, cgdb.
