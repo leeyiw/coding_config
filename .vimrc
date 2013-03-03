@@ -61,8 +61,6 @@ inoremap { {}<LEFT>
 inoremap [ []<LEFT>
 "自动补全()
 inoremap ( ()<LEFT>
-"自动补全<>
-inoremap < <><LEFT>
 "自动补全""
 inoremap " ""<LEFT>
 "自动补全''
@@ -131,6 +129,14 @@ function PythonSetting()
 	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=darkgrey
 	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=grey
 	IndentGuidesEnable
+endfunction
+"}
+
+"for html{
+autocmd FileType html call HTMLSetting()
+function HTMLSetting()
+	"自动补全<>
+	inoremap < <><LEFT>
 endfunction
 "}
 
