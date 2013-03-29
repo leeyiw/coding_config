@@ -144,3 +144,14 @@ endfunction
 filetype plugin on
 set completeopt=menu
 "}
+
+"for ctags{
+function! GenerateTagsFile()
+	if (filereadable("tags"))
+		exec ":silent !ctags -R"
+	endif
+endfunction
+autocmd! bufwritepost *.cpp :call GenerateTagsFile()
+autocmd! bufwritepost *.c   :call GenerateTagsFile()
+autocmd! bufwritepost *.h   :call GenerateTagsFile()
+"}
