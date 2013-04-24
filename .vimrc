@@ -111,7 +111,7 @@ nnoremap <F12> :AT<CR>
 "}
 
 "taglist{
-let Tlist_WinWidth=25
+let Tlist_WinWidth=30
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Show_One_File=1
@@ -134,6 +134,7 @@ endfunction
 
 "for html{
 autocmd FileType html call HTMLSetting()
+autocmd FileType xml call HTMLSetting()
 function HTMLSetting()
 	"自动补全<>
 	inoremap < <><LEFT>
@@ -148,7 +149,7 @@ set completeopt=menu
 "for ctags{
 function! GenerateTagsFile()
 	if (filereadable("tags"))
-		exec ":silent !ctags -R"
+		exec ":silent !ctags -R -a"
 	endif
 endfunction
 autocmd! bufwritepost *.cpp :call GenerateTagsFile()
