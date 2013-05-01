@@ -54,6 +54,8 @@ set incsearch
 "set ignorecase
 "设置当前行高亮
 set cursorline
+"设置高亮80列
+set colorcolumn=80
 
 "自动补全{}
 inoremap { {}<LEFT>
