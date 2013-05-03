@@ -3,8 +3,8 @@ call pathogen#infect()
 "设置屏幕为256色
 set t_Co=256
 "设置自动补全颜色
-hi Pmenu ctermbg=black
-hi PmenuSel ctermbg=red
+hi Pmenu ctermbg=black ctermfg=white
+hi PmenuSel ctermbg=red ctermfg=white
 "设置折叠颜色
 hi Folded ctermfg=241 ctermbg=NONE
 "设置搜索高亮的颜色
@@ -145,7 +145,11 @@ endfunction
 
 "for Omni{
 filetype plugin on
-set completeopt=menu
+set completeopt=menu,preview
+"}
+"
+"for pydiction{
+let g:pydiction_location = '/home/liyiwei/.vim/bundle/pydiction/complete-dict'
 "}
 
 "for ctags{
