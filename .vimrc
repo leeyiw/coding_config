@@ -131,6 +131,9 @@ function PythonSetting()
 	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=darkgrey
 	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=grey
 	IndentGuidesEnable
+	"for pydiction{
+	let g:pydiction_location = '/home/liyiwei/.vim/bundle/pydiction/complete-dict'
+	"}
 endfunction
 "}
 
@@ -146,10 +149,6 @@ endfunction
 "for Omni{
 filetype plugin on
 set completeopt=menu
-"}
-"
-"for pydiction{
-let g:pydiction_location = '/home/liyiwei/.vim/bundle/pydiction/complete-dict'
 "}
 
 "for ctags{
