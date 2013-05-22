@@ -150,7 +150,7 @@ endfunction
 filetype plugin on
 set completeopt=menu
 set path+=/usr/include/x86_64-linux-gnu
-let OmniCpp_MayCompleteScope = 0
+let OmniCpp_MayCompleteScope = 1
 "}
 
 "for ctags{
