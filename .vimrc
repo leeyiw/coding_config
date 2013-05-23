@@ -150,6 +150,7 @@ endfunction
 filetype plugin on
 set completeopt=menu
 set path+=/usr/include/x86_64-linux-gnu
+set tags+=/home/liyiwei/coding_config/stl.tags
 let OmniCpp_MayCompleteScope = 1
 "}
 
