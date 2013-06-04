@@ -109,7 +109,7 @@ let g:Powerline_symbols='fancy'
 "}
 
 "a.vim{
-nnoremap <F12> :AT<CR>
+nnoremap <F12> :AS<CR>
 "}
 
 "taglist{
@@ -117,6 +117,7 @@ let Tlist_WinWidth=30
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Show_One_File=1
+let Tlist_Close_On_Select=1
 nnoremap <silent> <F8> :TlistToggle<CR>
 "}
 
