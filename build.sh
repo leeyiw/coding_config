@@ -1,9 +1,9 @@
 #!/bin/bash
 
 cd ~
-ln -sT coding_config/.vimrc .vimrc
-ln -sT coding_config/.vim .vim
-ln -sT coding_config/.ctags .ctags
+ln -s coding_config/.vimrc .vimrc
+ln -s coding_config/.vim .vim
+ln -s coding_config/.ctags .ctags
 
 if [ ! -d .cgdb ]
 then
@@ -11,5 +11,5 @@ then
 	exit
 else
 	cd ~/.cgdb
-	ln -sT ../coding_config/cgdbrc cgdbrc
+	ln -s ../coding_config/cgdbrc cgdbrc
 fi

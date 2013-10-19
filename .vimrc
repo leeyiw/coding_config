@@ -165,3 +165,9 @@ autocmd! bufwritepost *.cpp :call GenerateTagsFile()
 autocmd! bufwritepost *.c   :call GenerateTagsFile()
 autocmd! bufwritepost *.h   :call GenerateTagsFile()
 "}
+
+"for solarized{
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+"}
