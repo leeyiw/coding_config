@@ -109,7 +109,7 @@ let g:Powerline_symbols='fancy'
 "}
 
 "a.vim{
-nnoremap <F12> :AS<CR>
+nnoremap <F12> :AS<CR><c-w>5+
 "}
 
 "taglist{
