@@ -109,7 +109,7 @@ let g:Powerline_symbols='fancy'
 "}
 
 "a.vim{
-nnoremap <F12> :AS<CR>
+nnoremap <F12> :AS<CR><C-W>5+
 "}
 
 "taglist{
@@ -151,7 +151,7 @@ endfunction
 filetype plugin on
 set completeopt=menu
 set path+=/usr/include/x86_64-linux-gnu
-set tags+=/home/liyiwei/coding_config/stl.tags
+set tags+=$HOME/coding_config/stl.tags
 let OmniCpp_MayCompleteScope = 1
 noremap <c-]> g<c-]>
 "}
