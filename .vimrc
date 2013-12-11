@@ -157,17 +157,6 @@ let OmniCpp_MayCompleteScope = 1
 noremap <c-]> g<c-]>
 "}
 
-"for ctags{
-function! GenerateTagsFile()
-	if (filereadable("tags"))
-		exec ":silent !ctags -R -a"
-	endif
-endfunction
-autocmd! bufwritepost *.cpp :call GenerateTagsFile()
-autocmd! bufwritepost *.c   :call GenerateTagsFile()
-autocmd! bufwritepost *.h   :call GenerateTagsFile()
-"}
-
 "for solarized{
 set background=dark
 let g:solarized_termcolors = 256
