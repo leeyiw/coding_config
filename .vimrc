@@ -133,7 +133,7 @@ function PythonSetting()
 	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=grey
 	IndentGuidesEnable
 	"for pydiction{
-	let g:pydiction_location = '/home/liyiwei/.vim/bundle/pydiction/complete-dict'
+	let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 	"}
 endfunction
 "}
