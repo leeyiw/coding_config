@@ -1,4 +1,4 @@
-call pathogen#infect()
+execute pathogen#infect()
 
 "设置屏幕为256色
 set t_Co=256
