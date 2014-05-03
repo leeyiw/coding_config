@@ -56,6 +56,8 @@ set incsearch
 set cursorline
 "设置高亮80列
 set colorcolumn=80
+"设置Vim7.4下正常使用backspace键
+set backspace=2
 
 "自动补全{}
 inoremap { {}<LEFT>
