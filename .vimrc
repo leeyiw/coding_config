@@ -123,7 +123,7 @@ let Tlist_Close_On_Select=1
 nnoremap <silent> <F8> :TlistToggle<CR>
 "}
 
-"for python{
+"for Python{
 autocmd FileType python call PythonSetting()
 function PythonSetting()
 	setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
@@ -137,6 +137,20 @@ function PythonSetting()
 	"for pydiction{
 	let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 	"}
+endfunction
+"}
+
+"for PHP{
+autocmd FileType php call PHPSetting()
+function PHPSetting()
+	setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+	let g:indent_guides_auto_colors = 0
+	let g:indent_guides_guide_size = 1
+	let g:indent_guides_start_level = 2
+	let g:indent_guides_enable_on_vim_startup = 1
+	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=darkgrey
+	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=grey
+	IndentGuidesEnable
 endfunction
 "}
 
