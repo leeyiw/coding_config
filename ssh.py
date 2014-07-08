@@ -5,7 +5,7 @@ import pexpect
 import time
 
 USERNAME = 'guest'
-PASSWORD = 'guest@12345687'
+PASSWORD = 'guest_12345687'
 HOST = 'leeyiw.org'
 
 def main():
