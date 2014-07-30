@@ -6,6 +6,7 @@
 
 [wildcard]
 *://*.google.com/*
+*://*.gstatic.com/*
 *://*.twitter.com/*
 *://*.stackoverflow.com/*
 
