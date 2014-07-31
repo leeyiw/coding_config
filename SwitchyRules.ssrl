@@ -9,6 +9,7 @@
 *://*.gstatic.com/*
 *://*.twitter.com/*
 *://*.stackoverflow.com/*
+*://*.dropbox.com/*
 *://*.dropboxusercontent.com/*
 
 [regexp]
