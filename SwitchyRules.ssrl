@@ -9,6 +9,7 @@
 *://*.gstatic.com/*
 *://*.googleapis.com/*
 *://*.googlecode.com/*
+*://*.googleusercontent.com/*
 *://*.twitter.com/*
 *://*.stackoverflow.com/*
 *://*.dropbox.com/*
