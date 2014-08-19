@@ -5,15 +5,16 @@
 #BEGIN
 
 [wildcard]
+*://*.dropbox.com/*
+*://*.dropboxusercontent.com/*
 *://*.google.com/*
-*://*.gstatic.com/*
 *://*.googleapis.com/*
 *://*.googlecode.com/*
 *://*.googleusercontent.com/*
-*://*.twitter.com/*
+*://*.gstatic.com/*
+*://*.sstatic.net/*
 *://*.stackoverflow.com/*
-*://*.dropbox.com/*
-*://*.dropboxusercontent.com/*
+*://*.twitter.com/*
 
 [regexp]
 
