@@ -155,6 +155,7 @@ endfunction
 "for Omni{
 filetype plugin on
 set completeopt=menu
+set path+=/usr/local/include
 set path+=/usr/include/x86_64-linux-gnu
 set tags+=$HOME/coding_config/stl.tags
 let OmniCpp_ShowPrototypeInAbbr = 1
