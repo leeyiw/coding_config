@@ -16,6 +16,7 @@
 *://*.sstatic.net/*
 *://*.stackoverflow.com/*
 *://*.twitter.com/*
+*://*.t.co/*
 
 [regexp]
 
