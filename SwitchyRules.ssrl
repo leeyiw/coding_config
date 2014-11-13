@@ -5,6 +5,7 @@
 #BEGIN
 
 [wildcard]
+*://*.chrome.com/*
 *://*.dropbox.com/*
 *://*.dropboxusercontent.com/*
 *://*.github.com/*
