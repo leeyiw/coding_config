@@ -147,6 +147,7 @@ endfunction
 autocmd FileType html call HTMLSetting()
 autocmd FileType xml call HTMLSetting()
 function HTMLSetting()
+	setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 	"自动补全<>
 	inoremap < <><LEFT>
 endfunction
