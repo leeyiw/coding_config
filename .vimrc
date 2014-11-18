@@ -55,7 +55,9 @@ set incsearch
 "设置当前行高亮
 set cursorline
 "设置高亮80列
-set colorcolumn=80
+if exists('+colorcolumn')
+	set colorcolumn=80
+endif
 "设置Vim7.4下正常使用backspace键
 set backspace=2
 

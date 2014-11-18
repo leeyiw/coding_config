@@ -5,6 +5,7 @@
 #BEGIN
 
 [wildcard]
+*://*.chrome.com/*
 *://*.dropbox.com/*
 *://*.dropboxusercontent.com/*
 *://*.github.com/*
@@ -15,6 +16,7 @@
 *://*.googlecode.com/*
 *://*.googledrive.com/*
 *://*.googleusercontent.com/*
+*://*.gravatar.com/*
 *://*.gstatic.com/*
 *://*.instagram.com/*
 *://*.sstatic.net/*
