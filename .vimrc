@@ -29,7 +29,7 @@ set number
 "设置tab宽度为4
 set tabstop=4
 "设置tab键用空格替换
-"set expandtab
+set expandtab
 "设置<<与>>的缩进和tabstop相同
 set shiftwidth=4
 "设置增强型自动补全
