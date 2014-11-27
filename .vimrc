@@ -7,8 +7,6 @@ hi Pmenu ctermbg=black ctermfg=white
 hi PmenuSel ctermbg=red ctermfg=white
 "设置折叠颜色
 hi Folded ctermfg=241 ctermbg=NONE
-"设置搜索高亮的颜色
-hi Search ctermfg=0
 "当前行背景色高亮
 hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
@@ -20,6 +18,8 @@ set termencoding=utf8
 "设置自动高亮
 syntax on
 syntax enable
+"设置搜索不高亮
+set nohlsearch
 "设置为增强模式，不兼容vi
 set nocompatible
 "设置底部状态栏
