@@ -5,7 +5,7 @@ import pexpect
 import time
 
 USERNAME = 'guest'
-PASSWORD = 'guest!@#'
+PASSWORD = 'guestguest'
 HOST = 'vpn.leeyiw.org'
 PORT = 2222
 
