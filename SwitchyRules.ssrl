@@ -22,9 +22,12 @@
 *://*.sourceforge.net/*
 *://*.sstatic.net/*
 *://*.stackoverflow.com/*
+*://*.t.co/*
 *://*.twimg.com/*
 *://*.twitter.com/*
-*://*.t.co/*
+*://*.typekit.net/*
+*://*.vimeo.com/*
+*://*.zdassets.com/*
 
 [regexp]
 
