@@ -3,10 +3,13 @@
 cd ~
 
 # 将repo中的submodule全部更新后再进行其他操作
+echo -n "Updating submodules...                 "
 git -C ~/coding_config submodule init
 git -C ~/coding_config submodule update
+echo "Done!"
 
 # 安装Vim配置文件及插件
+echo -n "Installing Vim plugins...              "
 if [ -L .vimrc ]
 then
 	rm .vimrc
@@ -18,17 +21,21 @@ then
 	rm .vim
 fi
 ln -s coding_config/.vim .vim
+echo "Done!"
 
+echo -n "Installing configuration for Ctags...  "
 if [ -L .ctags ]
 then
 	rm .ctags
 fi
 ln -s coding_config/.ctags .ctags
+echo "Done!"
 
+echo -n "Installing configuration for CGDB...   "
 # 安装CGDB的配置文件
 if [ ! -d .cgdb ]
 then
-	if command -v cgdb > /dev/null 2>&1
+	if command -v cgdb >/dev/null 2>&1
 	then
 		mkdir .cgdb
 	else
@@ -42,3 +49,4 @@ then
 	rm cgdbrc
 fi
 ln -s ../coding_config/cgdbrc cgdbrc
+echo "Done!"
