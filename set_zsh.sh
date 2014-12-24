@@ -5,9 +5,10 @@ ZSH_THEME="steeef"
 plugins=(git golang)
 
 # Suppress dircolors error on Mac OS X
-if command -v dircolors >/dev/null 2>&1
+DIRCOLORS_FILE=$HOME/.dircolors
+if command -v dircolors >/dev/null 2>&1 && [ -f $DIRCOLORS_FILE ]
 then
-    eval `dircolors ~/.dircolors`
+    eval `dircolors $DIRCOLORS_FILE`
 fi
 
 # Run oh-my-zsh.sh
@@ -15,3 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Disable history sharing
 unsetopt SHARE_HISTORY
+
+# Use full hostname at PROMPT
+PROMPT=`echo $PROMPT | sed -e 's/%m%/%M%/g'`
+export PROMPT
