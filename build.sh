@@ -23,7 +23,7 @@ fi
 ln -s coding_config/.vim .vim
 echo "Done!"
 
-echo -n "Installing configuration for Ctags...  "
+echo -n "Installing configuration for ctags...  "
 if [ -L .ctags ]
 then
 	rm .ctags
@@ -51,7 +51,7 @@ fi
 ln -s ../coding_config/cgdbrc cgdbrc
 echo "Done!"
 
-echo -n "Installing configuration for SSH...   "
+echo -n "Installing configuration for SSH...    "
 # 安装SSH的配置文件
 if [ ! -d ~/.ssh ]
 then
@@ -63,4 +63,14 @@ then
 	rm config
 fi
 ln -s ../coding_config/ssh_config config
+echo "Done!"
+
+echo -n "Installing configuration for tmux...   "
+# 安装tmux的配置文件
+cd ~
+if [ -e .tmux.conf ]
+then
+	rm .tmux.conf
+fi
+ln -s coding_config/.tmux.conf .tmux.conf
 echo "Done!"
