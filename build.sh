@@ -33,11 +33,11 @@ echo "Done!"
 
 echo -n "Installing configuration for CGDB...   "
 # 安装CGDB的配置文件
-if [ ! -d .cgdb ]
+if [ ! -d ~/.cgdb ]
 then
 	if command -v cgdb >/dev/null 2>&1
 	then
-		mkdir .cgdb
+		mkdir ~/.cgdb
 	else
 		echo "directory '.cgdb' is not exists! forget to install cgdb?"
 		exit
@@ -49,4 +49,18 @@ then
 	rm cgdbrc
 fi
 ln -s ../coding_config/cgdbrc cgdbrc
+echo "Done!"
+
+echo -n "Installing configuration for SSH...   "
+# 安装SSH的配置文件
+if [ ! -d ~/.ssh ]
+then
+    mkdir ~/.ssh
+fi
+cd ~/.ssh
+if [ -e config ]
+then
+	rm config
+fi
+ln -s ../coding_config/ssh_config config
 echo "Done!"
