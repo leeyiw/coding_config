@@ -35,13 +35,7 @@ echo -n "Installing configuration for CGDB...   "
 # 安装CGDB的配置文件
 if [ ! -d ~/.cgdb ]
 then
-	if command -v cgdb >/dev/null 2>&1
-	then
-		mkdir ~/.cgdb
-	else
-		echo "directory '.cgdb' is not exists! forget to install cgdb?"
-		exit
-	fi
+    mkdir ~/.cgdb
 fi
 cd ~/.cgdb
 if [ -L cgdbrc ]
