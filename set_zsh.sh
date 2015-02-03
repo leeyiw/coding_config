@@ -22,7 +22,7 @@ PROMPT=`echo $PROMPT | sed -e 's/%m%/%M%/g'`
 export PROMPT
 
 # Start tmux
-if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]
+if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [ -z "$SSH_CONNECTION" ]
 then
     exec tmux -2
 fi
