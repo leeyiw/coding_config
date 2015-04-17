@@ -26,3 +26,10 @@ if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [ -z "$SSH_CONNECTION" ]
 then
     exec tmux -2
 fi
+
+# Set Java environment variable
+export JAVA_HOME=/opt/jdk
+export PATH=$PATH:$JAVA_HOME/bin
+
+# Set Maven environment variable
+export PATH=$PATH:/opt/apache-maven/bin
