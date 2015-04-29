@@ -28,7 +28,12 @@ then
 fi
 
 # Set Java environment variable
-export JAVA_HOME=/opt/jdk
+if uname | grep -q Linux
+then
+    export JAVA_HOME=/opt/jdk
+else
+    export JAVA_HOME=$(/usr/libexec/java_home)
+fi
 export PATH=$PATH:$JAVA_HOME/bin
 
 # Set Maven environment variable

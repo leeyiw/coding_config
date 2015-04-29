@@ -1,5 +1,7 @@
 ControlMaster auto
 ControlPath /tmp/ssh-%r@%h:%p
 
+SendEnv LANG LC_*
+
 Host *
     ServerAliveInterval 60
