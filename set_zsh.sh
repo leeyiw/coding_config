@@ -44,3 +44,4 @@ export PATH=$PATH:/opt/apache-maven/bin
 
 # Alias
 alias please=sudo
+alias vi=vim
