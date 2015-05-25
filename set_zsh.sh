@@ -28,7 +28,7 @@ then
 fi
 
 # Add bin directory at $HOME to $PATH
-export PATH=$PATH:$HOME/bin
+export PATH=$HOME/bin:$PATH
 
 # Set Java environment variable
 if uname | grep -q Linux
