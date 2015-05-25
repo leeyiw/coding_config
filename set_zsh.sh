@@ -27,6 +27,9 @@ then
     exec tmux -2
 fi
 
+# Add bin directory at $HOME to $PATH
+export PATH=$PATH:$HOME/bin
+
 # Set Java environment variable
 if uname | grep -q Linux
 then
