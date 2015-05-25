@@ -38,3 +38,6 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 # Set Maven environment variable
 export PATH=$PATH:/opt/apache-maven/bin
+
+# Alias
+alias please=sudo
