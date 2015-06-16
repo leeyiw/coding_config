@@ -4,8 +4,10 @@ cd ~
 
 # 将repo中的submodule全部更新后再进行其他操作
 echo -n "Updating submodules...                 "
-git -C ~/coding_config submodule init
-git -C ~/coding_config submodule update
+cd ~/coding_config
+git submodule init
+git submodule update
+cd ~
 echo "Done!"
 
 # 安装Vim配置文件及插件
