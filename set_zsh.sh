@@ -6,9 +6,15 @@ plugins=(git golang)
 
 # Suppress dircolors error on Mac OS X
 DIRCOLORS_FILE=$HOME/.dircolors
-if command -v dircolors >/dev/null 2>&1 && [ -f $DIRCOLORS_FILE ]
+if uname | grep -q Linux
 then
-    eval `dircolors $DIRCOLORS_FILE`
+    DIRCOLORS_CMD=dircolors
+else
+    DIRCOLORS_CMD=gdircolors
+fi
+if command -v $DIRCOLORS_CMD >/dev/null 2>&1 && [ -f $DIRCOLORS_FILE ]
+then
+    eval `$DIRCOLORS_CMD $DIRCOLORS_FILE`
 fi
 
 # Run oh-my-zsh.sh
@@ -45,3 +51,7 @@ export PATH=$PATH:/opt/apache-maven/bin
 # Alias
 alias please=sudo
 alias vi=vim
+alias proxychains4="proxychains4 -q"
+if ! uname | grep -q Linux
+    alias ls="gls --color=auto"
+fi
