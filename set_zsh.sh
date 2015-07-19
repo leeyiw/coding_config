@@ -2,7 +2,7 @@
 ZSH_THEME="steeef"
 
 # Set plugins
-plugins=(git golang)
+plugins=(brew git pip svn)
 
 # Suppress dircolors error on Mac OS X
 DIRCOLORS_FILE=$HOME/.dircolors
@@ -53,5 +53,6 @@ alias please=sudo
 alias vi=vim
 alias proxychains4="proxychains4 -q"
 if ! uname | grep -q Linux
+then
     alias ls="gls --color=auto"
 fi
