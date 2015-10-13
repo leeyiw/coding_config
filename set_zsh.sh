@@ -2,7 +2,7 @@
 ZSH_THEME="steeef"
 
 # Set plugins
-plugins=(brew git pip svn)
+plugins=(brew git pip svn tmuxinator autojump)
 
 # Suppress dircolors error on Mac OS X
 DIRCOLORS_FILE=$HOME/.dircolors
@@ -26,12 +26,6 @@ unsetopt SHARE_HISTORY
 # Use full hostname at PROMPT
 PROMPT=`echo $PROMPT | sed -e 's/%m%/%M%/g'`
 export PROMPT
-
-# Start tmux
-if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [ -z "$SSH_CONNECTION" ]
-then
-    exec tmux -2
-fi
 
 # Add bin directory at $HOME to $PATH
 export PATH=$HOME/bin:$PATH
