@@ -22,7 +22,7 @@ if [ -L .vim ]
 then
 	rm .vim
 fi
-ln -s coding_config/.vim .vim
+ln -s coding_config/vim .vim
 echo "Done!"
 
 echo -n "Installing configuration for ctags...  "
