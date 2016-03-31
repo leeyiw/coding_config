@@ -16,6 +16,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/a.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'taglist.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
@@ -24,6 +26,10 @@ filetype plugin indent on     " required
 
 "for YCM{
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
+let g:ycm_add_preview_to_completeopt = 0
+set completeopt-=preview
 "}
 "
 
@@ -52,6 +58,9 @@ let Tlist_File_Fold_Auto_Close=1
 let Tlist_Show_One_File=1
 let Tlist_Close_On_Select=1
 nnoremap <silent> <F8> :TlistToggle<CR>
+"}
+
+"UltiSnips{
 "}
 
 
