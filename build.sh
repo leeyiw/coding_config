@@ -16,7 +16,7 @@ if [ -L .vimrc ]
 then
 	rm .vimrc
 fi
-ln -s coding_config/.vimrc .vimrc
+ln -s coding_config/vimrc .vimrc
 
 if [ -L .vim ]
 then

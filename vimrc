@@ -11,6 +11,11 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Yggdroot/indentLine'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/a.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'taglist.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
@@ -18,11 +23,35 @@ filetype plugin indent on     " required
 
 
 "for YCM{
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+"}
+"
+
+"for solarized{
+set background=dark
+let g:solarized_termcolors = 256
+let g:solarized_termtrans = 1
+colorscheme solarized
 "}
 
 "airline{
 let g:airline_powerline_fonts = 1
+"}
+
+"NERDTree{
+let NERDTreeWinSize=30
+let NERDTreeWinPos='right'
+let NERDTreeShowHidden=0
+nnoremap <F4> :NERDTreeToggle<CR>
+"}
+
+"taglist{
+let Tlist_WinWidth=30
+let Tlist_Exit_OnlyWindow=1
+let Tlist_File_Fold_Auto_Close=1
+let Tlist_Show_One_File=1
+let Tlist_Close_On_Select=1
+nnoremap <silent> <F8> :TlistToggle<CR>
 "}
 
 
@@ -58,6 +87,8 @@ set tabstop=4
 set expandtab
 "设置<<与>>的缩进和tabstop相同
 set shiftwidth=4
+"设置softtabstop
+set softtabstop=4
 "设置增强型自动补全
 set wildmenu
 "设置自动缩进
@@ -112,75 +143,3 @@ nmap Z za
 "au BufWinLeave * silent mkview
 "自动加载视图
 "au BufWinEnter * silent loadview
-
-"按F5自动使用Makefile编译
-nnoremap <F5> :make clean;make<CR>
-
-"NERDTree{
-let NERDTreeWinSize=30
-let NERDTreeWinPos='right'
-let NERDTreeShowHidden=0
-nnoremap <F4> :NERDTreeToggle<CR>
-"}
-
-"a.vim{
-nnoremap <F12> :AS<CR><C-W>5+
-"}
-
-"taglist{
-let Tlist_WinWidth=30
-let Tlist_Exit_OnlyWindow=1
-let Tlist_File_Fold_Auto_Close=1
-let Tlist_Show_One_File=1
-let Tlist_Close_On_Select=1
-nnoremap <silent> <F8> :TlistToggle<CR>
-"}
-
-"for Python{
-autocmd FileType python call PythonSetting()
-function PythonSetting()
-	setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-	let g:indent_guides_auto_colors = 0
-	let g:indent_guides_guide_size = 1
-	let g:indent_guides_start_level = 2
-	let g:indent_guides_enable_on_vim_startup = 1
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=darkgrey
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=grey
-	IndentGuidesEnable
-	"for pydiction{
-	let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
-	"}
-endfunction
-"}
-
-"for PHP{
-autocmd FileType php call PHPSetting()
-function PHPSetting()
-	setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-	let g:indent_guides_auto_colors = 0
-	let g:indent_guides_guide_size = 1
-	let g:indent_guides_start_level = 2
-	let g:indent_guides_enable_on_vim_startup = 1
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=darkgrey
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=grey
-	IndentGuidesEnable
-endfunction
-"}
-
-"for html{
-autocmd FileType html call HTMLSetting()
-autocmd FileType xml call HTMLSetting()
-function HTMLSetting()
-	setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-	"自动补全<>
-	inoremap < <><LEFT>
-endfunction
-"}
-
-
-"for solarized{
-set background=dark
-let g:solarized_termcolors = 256
-let g:solarized_termtrans = 1
-colorscheme solarized
-"}
