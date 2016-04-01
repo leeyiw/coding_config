@@ -18,6 +18,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'taglist.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'nickhutchinson/vim-systemtap'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
