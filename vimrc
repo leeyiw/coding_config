@@ -19,6 +19,7 @@ Plugin 'taglist.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'nickhutchinson/vim-systemtap'
+Plugin 'vim-scripts/DeleteTrailingWhitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
@@ -62,6 +63,11 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 "}
 
 "UltiSnips{
+"}
+
+"DeleteTrailingWhitespace{
+let g:DeleteTrailingWhitespace = 1
+let g:DeleteTrailingWhitespace_Action = 'ask' 
 "}
 
 
