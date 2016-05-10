@@ -30,6 +30,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
 let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_error_symbol = '✗'
 set completeopt-=preview
 "}
 "
