@@ -19,6 +19,7 @@ Plugin 'taglist.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'nickhutchinson/vim-systemtap'
+Plugin 'vim-scripts/DeleteTrailingWhitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
@@ -31,6 +32,7 @@ let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_error_symbol = '✗'
+let g:ycm_confirm_extra_conf = 0
 set completeopt-=preview
 "}
 "
@@ -63,6 +65,11 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 "}
 
 "UltiSnips{
+"}
+
+"DeleteTrailingWhitespace{
+let g:DeleteTrailingWhitespace = 1
+let g:DeleteTrailingWhitespace_Action = 'ask'
 "}
 
 
