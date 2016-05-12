@@ -70,3 +70,13 @@ then
 fi
 ln -s coding_config/.tmux.conf .tmux.conf
 echo "Done!"
+
+echo -n "Installing configuration for dircolors...   "
+# 安装dircolors的配置文件
+cd ~
+if [ -e .dircolors ]
+then
+	rm .dircolors
+fi
+ln -s coding_config/dircolors.256dark .dircolors
+echo "Done!"
