@@ -28,7 +28,8 @@ PROMPT=`echo $PROMPT | sed -e 's/%m%/%M%/g'`
 export PROMPT
 
 # Add bin directory at $HOME to $PATH
-export PATH=$HOME/bin:$PATH
+export GOPATH=$HOME/go_workspace
+export PATH=$HOME/bin:$GOPATH/bin:/usr/local/go/bin:$PATH
 
 # Set Java environment variable
 if uname | grep -q Linux
