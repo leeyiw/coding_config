@@ -12,7 +12,9 @@ def main():
     now = datetime.now()
     output = subprocess.check_output(['dmesg'])
     for line in output.splitlines():
-        old_time_str = line[1:line.find("] ")] 
+        if line[0] != '[':
+            continue
+        old_time_str = line[1:line.find("] ")]
         old_ts = float(old_time_str)
         time_str = str(now - timedelta(seconds=(uptime - old_ts)))
         new_line = line.replace(old_time_str, time_str, 1)
