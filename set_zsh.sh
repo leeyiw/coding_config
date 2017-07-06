@@ -52,3 +52,4 @@ if ! uname | grep -q Linux
 then
     alias ls="gls --color=auto"
 fi
+eval $(thefuck --alias)

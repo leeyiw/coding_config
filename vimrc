@@ -17,10 +17,11 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'taglist.vim'
 Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plugin 'leeyiw/vim-snippets'
 Plugin 'nickhutchinson/vim-systemtap'
 Plugin 'vim-scripts/DeleteTrailingWhitespace'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'elzr/vim-json'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
@@ -34,6 +35,7 @@ let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_error_symbol = '✗'
 let g:ycm_confirm_extra_conf = 0
+"let g:ycm_python_binary_path = '/usr/local/bin/python3'
 set completeopt-=preview
 "}
 "
@@ -86,6 +88,8 @@ hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 "设置编码为utf8
 set encoding=utf8
+"设置文件探测编码
+set fileencodings=utf8,gbk
 "设置屏幕显示编码为utf8
 set termencoding=utf8
 
@@ -162,3 +166,7 @@ nmap Z za
 "au BufWinLeave * silent mkview
 "自动加载视图
 "au BufWinEnter * silent loadview
+
+autocmd Filetype cpp setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+set clipboard=unnamed
