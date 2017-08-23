@@ -168,5 +168,3 @@ nmap Z za
 "au BufWinEnter * silent loadview
 
 autocmd Filetype cpp setlocal tabstop=2 softtabstop=2 shiftwidth=2
-
-set clipboard=unnamed
