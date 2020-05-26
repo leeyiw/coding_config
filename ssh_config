@@ -5,3 +5,7 @@ SendEnv LANG LC_*
 
 Host *
     ServerAliveInterval 60
+    ForwardAgent yes
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa

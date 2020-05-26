@@ -35,8 +35,9 @@ let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_error_symbol = '✗'
 let g:ycm_confirm_extra_conf = 0
-"let g:ycm_python_binary_path = '/usr/local/bin/python3'
+let g:ycm_python_binary_path = 'python2'
 set completeopt-=preview
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
 "}
 "
 

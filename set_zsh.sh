@@ -2,7 +2,7 @@
 ZSH_THEME="steeef"
 
 # Set plugins
-plugins=(brew git pip svn tmuxinator autojump)
+plugins=(brew git python pip svn tmuxinator autojump httpie)
 
 # Suppress dircolors error on Mac OS X
 DIRCOLORS_FILE=$HOME/.dircolors
