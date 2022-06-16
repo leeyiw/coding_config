@@ -36,6 +36,7 @@ let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_error_symbol = '✗'
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_python_binary_path = 'python2'
+let g:ycm_auto_hover = ''
 set completeopt-=preview
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 "}
@@ -53,14 +54,14 @@ let g:airline_powerline_fonts = 1
 "}
 
 "NERDTree{
-let NERDTreeWinSize=30
+let NERDTreeWinSize=50
 let NERDTreeWinPos='right'
 let NERDTreeShowHidden=0
 nnoremap <F4> :NERDTreeToggle<CR>
 "}
 
 "taglist{
-let Tlist_WinWidth=30
+let Tlist_WinWidth=50
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Show_One_File=1

@@ -28,7 +28,7 @@ PROMPT=`echo $PROMPT | sed -e 's/%m%/%M%/g'`
 export PROMPT
 
 # Add bin directory at $HOME to $PATH
-export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go_workspace
 export PATH=$HOME/bin:$GOROOT/bin:$GOPATH/bin:$PATH
 
@@ -53,3 +53,6 @@ then
     alias ls="gls --color=auto"
 fi
 eval $(thefuck --alias)
+
+# pyenv
+eval "$(pyenv init -)"
